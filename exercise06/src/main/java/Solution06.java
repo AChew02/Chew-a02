@@ -1,12 +1,7 @@
-import java.time.Year;
-import java.util.Scanner;
-
-public class Solution06 {
-
-    /*
-     *  UCF COP3330 Fall 2021 Assignment 2 Solution
-     *  Copyright 2021 Adrian Chew
-     */
+ /*
+  *  UCF COP3330 Fall 2021 Assignment 2 Solution
+  *  Copyright 2021 Adrian Chew
+  */
 
     /*
     print "What is your current age?"
@@ -20,6 +15,11 @@ public class Solution06 {
     'retirementYear' = 'currYear' + 'yearsTillRetirement'
     print "It's 'currYear', so you can retire in 'retirementYear'."
      */
+
+import java.time.Year;
+import java.util.Scanner;
+
+public class Solution06 {
 
     private static final Scanner in = new Scanner(System.in);
 
