@@ -20,7 +20,7 @@
     'originalTemp' = parseDouble(get input from user)
     if('formula' == 1)
         'convertedTemp' = ('originalTemp' - 32) * 5 / 9
-    else
+    else 
         'convertedTemp' = ('originalTemp' * 9 / 5) + 32
     print "output", 'convertedTemp'
     */
