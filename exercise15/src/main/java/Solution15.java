@@ -49,10 +49,12 @@ public class Solution15 {
         String attemptedUsername = app.getStringFromUser("What is the username?");
         String attemptedPassword = app.getStringFromUser("What is the password?");
 
-        String output = "I don't know you.";
+        String output;
 
         if(app.compareString(knownUser, attemptedUsername) && app.compareString(knownPassword, attemptedPassword)) {
             output = "Welcome!";
+        } else {
+            output = "I don't know you.";
         }
 
         app.printOutput(output);
