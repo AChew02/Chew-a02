@@ -7,10 +7,10 @@
     forLoop counter=1; counter <=3; counter++
         print "Enter the price of item 1:"
         'in' = get input from user
-        'price' = parseInt('in')
+        'price' = parseDouble('in')
         print "Enter the quantity of item 1:"
         'in' = get input from user
-        'count' = parseInt('in')
+        'count' = parseDouble('in')
         'subTotal' += price * count
     'taxRate' = .055
     'tax' = 'subtotal' * 'taxRate'
@@ -24,12 +24,12 @@ public class Solution10 {
 
     private static final Scanner in = new Scanner(System.in);
 
-    public int getInputFromUser(String prompt) {
+    public double getInputFromUser(String prompt) {
         System.out.println(prompt);
-        return Integer.parseInt(in.nextLine());
+        return Double.parseDouble(in.nextLine());
     }
 
-    public double calcSubTotal(double subTotal, int price, int count) {
+    public double calcSubTotal(double subTotal, double price, double count) {
         subTotal += price * count;
         return subTotal;
     }
@@ -52,8 +52,8 @@ public class Solution10 {
         final double TAX_RATE = .055;
 
         double subTotal = 0;
-        int price;
-        int count;
+        double price;
+        double count;
 
         for(int counter = 1; counter <=3; counter++) {
             price = app.getInputFromUser("Enter the price of item " + counter + ":");
